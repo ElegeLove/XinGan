@@ -1,0 +1,7 @@
+<!--pages/AboutUs/AboutUs.wxml-->
+<view>
+  <view class="title">企业简介</view>
+  <view class="text">
+    <rich-text nodes="{{data.content}}"></rich-text>
+  </view>
+</view>

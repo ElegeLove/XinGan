@@ -1,0 +1,50 @@
+<!--pages/detection/detection.wxml-->
+<view>
+  <view class="nav">
+    <view>当前连接设备：
+      <text class="equipment">心感S2</text>
+    </view>
+    <view class="updata" bindtap="goScanning">更换设备</view>
+  </view>
+  <view class="status_box">
+    <view><!-- 1为离床，2是体动， 3是在床。  -->
+      <text>当前状态：</text>
+      <text class="status_box_text">{{status==1?'离床':status==2?'体动':'在床'}}</text>
+    </view>
+    <view class="status_box_tips">保持平静状态以测量心率数据</view>
+  </view>
+  <view class="heartRate">
+    <image animation="{{animation}}" src="../../image/ios/home_bg_xlxs.png"></image>
+    <!-- <image src="../../image/ios/home_bg_xlxss.gif"></image> -->
+   <view>
+    <view>实时心率</view>
+    <view>
+      <view class="num">{{heart}}</view>
+      <!-- <view class="num">{{dataVal.heart}}</view> -->
+      <view>
+        <view>
+          <image class="fei" src="/image/ios/xin.png"></image>
+        </view>
+        <view class="text">次/分</view>
+      </view>
+    </view>
+   </view>
+  </view>
+  <view class="breathing">
+    <image animation="{{animation}}" src="../../image/ios/home_bg_xlxs2.png"></image>
+    <!-- <image src="../../image/ios/home_bg_xlxs2s.gif"></image> -->
+    <view>
+      <view>实时呼吸率</view>
+    <view>
+      <view class="num">{{breath}}</view>
+      <!-- <view class="num">{{dataVal.breath}}</view> -->
+      <view>
+        <view>
+          <image class="fei" src="/image/ios/fei.png"></image>
+        </view>
+        <view class="text">次/分</view>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>

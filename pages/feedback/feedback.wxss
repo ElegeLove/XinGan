@@ -1,0 +1,59 @@
+/* pages/feedback/feedback.wxss */
+.html{
+  width: 100vw;height: 100vh;
+  /* background-color: #F7F7F7; */
+}
+.style{
+  width: 100vw;height: 18rpx;
+  background-color: #F7F7F7;
+}
+.body{
+  /* width: 90%; */
+  margin: 0 auto;
+  padding: 37rpx 0;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.phone{
+  width: 90%;
+  /* width: 100vw;height: 100rpx; */
+  display: flex;
+  align-items: center;
+  margin: 36rpx auto;
+  background-color: #fff;
+}
+.phone>text{
+  margin-right: 50rpx;
+}
+.title{
+  margin: 40rpx 0;
+}
+.check{
+  margin: 42rpx 0;
+  padding: 30rpx;
+  background: #FAFAFA;
+  border-radius: 10px;
+}
+.num{
+  font-size: 26rpx;
+  color: #CCCCCC;
+  text-align: right;
+}
+.placeholder{
+  font-size: 28rpx;
+  color: #CCCCCC;
+}
+.button{
+  height: 108rpx;
+  background-color: #F87628;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 108rpx;
+  padding: 0;
+}

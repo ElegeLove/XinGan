@@ -1,0 +1,27 @@
+/* pages/scanning_successful/scanning_successful.wxss */
+.scanning{
+  text-align: center;
+}
+.font{
+  font-size: 48rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #F87628;
+  line-height: 36rpx;
+  margin-top: 145rpx;
+}
+.image>image{
+  width: 565rpx;height: 565rpx;
+  margin-top: 100rpx;
+}
+.button button{
+  width: 320rpx;height: 80rpx;
+  border: 2rpx solid #F87628;
+  border-radius: 40rpx;
+  background-color: #ffffff;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #F87628;
+  margin-top: 150rpx;
+}

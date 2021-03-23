@@ -1,0 +1,26 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class="bg">
+    <image src="/image/ios/home_bg_wd.png"></image>
+    <view class="portrait">
+      <!-- <image src="/image/ios/home_ic_tx_jpg.png"></image>
+      <view>被水淹死的鱼</view> -->
+      <open-data type="userAvatarUrl" class="img" ></open-data>
+      <open-data type="userNickName" class="uname"></open-data>
+    </view>
+  </view>
+  <view>
+    <view class="button" bindtap="collection">
+      <view>我的收藏</view>
+      <image class="image" src="/image/ios/right_ic_more.png"></image>
+    </view>
+    <view class="button" bindtap="AboutUs">
+      <view>关于我们</view>
+      <image class="image" src="/image/ios/right_ic_more.png"></image>
+    </view>
+    <view class="button" bindtap="feedback">
+      <view>联系反馈</view>
+      <image class="image" src="/image/ios/right_ic_more.png"></image>
+    </view>
+  </view>
+</view>

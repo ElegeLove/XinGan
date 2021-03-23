@@ -1,0 +1,118 @@
+/**index.wxss**/
+/* 建议 */
+.html{
+  width: 100vw;
+  height: 110vh;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+}
+.advice{
+  width: 670rpx;height: 160rpx;
+  color: #F87628;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  background-color: #FDE9DD;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.advice>view:first-child{
+  font-weight: bold;
+  padding: 0 40rpx;
+}
+.advice>view:last-child{
+  padding: 0 40rpx;
+}
+/* 测试 */
+.test{
+  width: 670rpx;height: 180rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  position: relative;
+  z-index: 1;
+}
+.test_img{
+  width: 670rpx;height: 180rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.score{
+  font-size: 72rpx;
+  font-family: DINOT;
+  font-weight: 500;
+  color: #F87628;
+}
+.test>view:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.test>view:last-child{
+  display: flex;
+  align-items: center;
+}
+.test>view>view:first-child{
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+.test>view>view:last-child{
+  font-size: 27rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.test>view>button{
+  width: 250rpx;height: 64rpx;
+  font-size: 30rpx;
+  border: 2rpx solid #F87628;
+  border-radius: 32rpx;
+  color: #F87628;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-family: PingFang SC;
+  line-height: 32rpx;
+}
+/* 功能 */
+.function{
+  display: flex;
+  margin-top: 30rpx;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.function>view{
+  width: 317rpx;height: 330rpx;
+  font-family: PingFang SC;
+  color: #333333;
+  margin-top: 32rpx;
+  position: relative;
+  z-index: 1;
+}
+.main_img{
+  width: 317rpx;height: 330rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.heartRate>view>view:first-child,.sleep>view>view:first-child,.hrv>view>view:first-child,.pressure>view>view:first-child{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.heartRate>view>view:last-child,.sleep>view>view:last-child,.hrv>view>view:last-child,.pressure>view>view:last-child{
+  font-size: 27rpx;
+  font-weight: 500;
+}
+.heartRate>view,.sleep>view,.hrv>view,.pressure>view{
+  margin-top: 150rpx;
+  margin-left: 40rpx;
+}

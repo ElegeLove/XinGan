@@ -1,0 +1,98 @@
+<!--pages/hrv/hrv.wxml-->
+<view class="view">
+  <view class="date1">
+    <view>
+      <image bindtap="before" src="/image/ios/home_ic_left.png"></image>
+    </view>
+    <view>{{time}}</view>
+    <view>
+      <image bindtap="after" src="/image/ios/home_ic_right.png"></image>
+    </view>
+  </view>
+  <view class="title">
+    <view>您的HRV指标</view>
+    <view>正常范围</view>
+  </view>
+</view>
+<view class="hrv">
+    <!-- sdnn -->
+    <view class="content">
+      <view class="graphics colorSdnn"></view>
+      <view class="fine_tuning_left">SDNN</view>
+      <view class="fine_tuning_ri">{{res.sdnn}}</view>
+      <view>
+        <view class="excessive">
+          <image class="triangle" style="left: {{sdnnCss}}rpx;" src="/image/ios/home_ic_jt.png"></image>
+          <view class="scope">
+            <text class="Sdnntext">32</text>
+            <text>93</text>
+          </view>
+          <view class="normal colorSdnn"></view>
+        </view>
+      </view>
+    </view>
+    <!-- RMSSD -->
+    <view class="content">
+      <view class="graphics colorRmssd"></view>
+      <view class="fine_tuning_left">RMSSD</view>
+      <view class="fine_tuning_ri">{{res.rmssd}}</view>
+      <view>
+        <view class="excessive">
+          <image class="triangle" style="left: {{rmssdCss}}rpx;" src="/image/ios/home_ic_jt.png"></image>
+          <view class="scope">
+            <text class="Sdnntext">19</text>
+            <text>75</text>
+          </view>
+          <view class="normal colorRmssd"></view>
+        </view>
+      </view>
+    </view>
+    <!-- LF -->
+    <view class="content">
+      <view class="graphics colorLf"></view>
+      <view class="fine_tuning_left">LF</view>
+      <view class="fine_tuning_ri">{{res.lf}}</view>
+      <view>
+        <view class="excessive">
+          <image class="triangle" style="left: {{lfCss}}rpx;" src="/image/ios/home_ic_jt.png"></image>
+          <view class="scope">
+            <text class="Lftext">193</text>
+            <text>690</text>
+          </view>
+          <view class="normal colorLf"></view>
+        </view>
+      </view>
+    </view>
+    <!-- HF -->
+    <view class="content">
+      <view class="graphics colorHf"></view>
+      <view class="fine_tuning_left">HF</view>
+      <view class="fine_tuning_ri">{{res.hf}}</view>
+      <view>
+        <view class="excessive">
+          <image class="triangle" style="left: {{hfCss}}rpx;" src="/image/ios/home_ic_jt.png"></image>
+          <view class="scope">
+            <text class="Hftext">830</text>
+            <text>2630</text>
+          </view>
+          <view class="normal colorHf"></view>
+        </view>
+      </view>
+    </view>
+    <!-- SD1/SD2 -->
+    <view class="content">
+      <view class="graphics colorSd"></view>
+      <view class="fine_tuning_left">SD1/SD2</view>
+      <view class="fine_tuning_ri">{{res.sd1sd2}}</view>
+      <view>
+        <view class="excessive">
+          <image class="triangle" style="left: {{sd1sd2Css}}rpx;" src="/image/ios/home_ic_jt.png"></image>
+          <view class="scope">
+            <text class="Sdtext">0.32</text>
+            <text>0.56</text>
+          </view>
+          <view class="normal colorSd"></view>
+        </view>
+      </view>
+    </view>
+</view>

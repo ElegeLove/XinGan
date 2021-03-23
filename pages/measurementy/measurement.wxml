@@ -1,0 +1,26 @@
+<!--pages/mmeasurementy/measurement.wxml-->
+<view>
+  <view class="title">{{id+1}}.{{TI[id].title}}</view>
+  <view class="xian"></view>
+  <view class="answer">
+    <radio-group bindchange="value">
+      <view style="width: 90%;margin: 0 auto;" class="test" wx:for="{{TI[id].ans}}" wx:key="index">
+        <radio checked="{{item.id==an_id}}" value="{{item.id}}"></radio>
+        <view>{{item.sort}}.{{item.content}}</view>
+        <view wx:if="{{id==0}}">
+          <button class="button" style="width:100%;" bindtap="behind">下一题</button>
+        </view>
+        <view class="button1" wx:if="{{id!=0}}">
+          <button style="width:50%;" bindtap="before">上一题</button>
+          <button style="width:50%;" bindtap="behind">下一题</button>
+        </view>
+        <view class="button1" wx:if="{{id==TI.length-1}}">
+          <button style="width:50%;" bindtap="before">上一题</button>
+          <button style="width:50%;" bindtap="get">提交</button>
+        </view>
+      </view>
+     
+    </radio-group>
+  </view>
+ 
+</view>

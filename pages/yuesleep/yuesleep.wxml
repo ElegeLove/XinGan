@@ -1,0 +1,44 @@
+<!-- 时间 -->
+<view>
+  <view class="date">
+    <view bindtap="sleep">日</view>
+    <view bindtap="zhousleep">周</view>
+    <view>月</view>
+    <view bindtap="niansleep">年</view>
+  </view>
+  <view class="date1">
+    <view>
+      <image bindtap="before" src="/image/ios/home_ic_left.png"></image>
+    </view>
+    <view>{{yue}}月</view>
+    <view>
+      <image bindtap="after" src="/image/ios/home_ic_right.png"></image>
+    </view>
+  </view>
+  <view>
+    <view class="sleep">日均睡眠时长</view>
+    <view class="sleepTime">
+      <view>7</view>
+      <view>时</view>
+      <view>12</view>
+      <view>分</view>
+    </view>
+  </view>
+  <view class="container marg">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ee }}"></ec-canvas>
+    <view class="time" style="bottom:-23rpx">
+        <view class="time1">
+          <view>8/1</view>
+          <view>8/6</view>
+          <view>8/11</view>
+          <view>8/16</view>
+          <view>8/21</view>
+          <view>8/26</view>
+          <view>8/30</view>
+        </view>
+      </view>
+  </view>
+  <view class="container">
+    <ec-canvas id="mychart-dom" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+<!--pages/sleep/sleep.wxml-->
+<!-- 时间 -->
+<view>
+  <view class="date">
+    <view>日</view>
+    <view bindtap="zhousleep">周</view>
+    <view bindtap="yuesleep">月</view>
+    <view bindtap="niansleep">年</view>
+  </view>
+  <view class="date1">
+    <view>
+      <image bindtap="before" src="/image/ios/home_ic_left.png"></image>
+    </view>
+    <view>{{time}}</view>
+    <view>
+      <image bindtap="after" src="/image/ios/home_ic_right.png"></image>
+    </view>
+  </view>
+  <view>
+    <view class="sleep">总睡眠</view>
+    <view class="sleepTime">
+      <view>7</view>
+      <view>时</view>
+      <view>24</view>
+      <view>分</view>
+    </view>
+  </view>
+  <view class="container marg">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ee }}"></ec-canvas>
+    <view class="time">
+        <view class="time1" style=" width: 90%;">
+          <view>20时</view>
+          <view>22时</view>
+          <view>2时</view>
+          <view>6时</view>
+          <view>8时</view>
+        </view>
+      </view>
+  </view>
+  <view class="container">
+      <!-- <view class="data_conut">
+        <view class="row">
+          <view class="yuan"></view>
+          <view class="sleep_text">浅睡眠</view>
+          <view class="sleep_time">
+            <text>5</text>
+            <text>时</text>
+            <text>45</text>
+            <text>分</text>
+          </view>
+        </view>
+        <view class="row">
+          <view class="yuan yuan2"></view>
+          <view class="sleep_text">深度睡眠</view>
+          <view class="sleep_time">
+            <text>1</text>
+            <text>时</text>
+            <text>37</text>
+            <text>分</text>
+          </view>
+        </view>
+      </view> -->
+    <ec-canvas id="mychart-dom" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

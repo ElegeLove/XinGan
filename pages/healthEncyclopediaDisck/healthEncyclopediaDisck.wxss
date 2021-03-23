@@ -1,0 +1,147 @@
+/* pages/healthEncyclopediaDisck/healthEncyclopediaDisck.wxss */
+.view {
+  width: 100%;
+  padding-bottom: 120rpx;
+  box-sizing: border-box;
+  /* margin: 0 auto; */
+}
+
+.view_top {
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 40rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  margin: 55rpx 0;
+}
+
+.healthEncyclopediaDisck_image {
+  /* width: 671rpx;height: 311rpx; */
+  width: 100%;
+  /* object-fit: contain;  */
+}
+
+.tit_time {
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 80rpx;
+}
+
+/* 评论 */
+.comments_box {
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  border-top: 12rpx solid #F7F7F7;
+}
+
+.comments_title {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  margin: 41rpx 0;
+}
+
+.comments {
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portrait {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+}
+
+.commentsDis {
+  width: 450rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+
+.commentsDis>view {
+  padding: 10rpx 0;
+}
+
+.commentsDis>view:nth-child(3) {
+  font-size: 25rpx;
+}
+
+.hui {
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 25rpx;
+}
+
+/* 写评论 */
+.iput_box {
+  width: 100%;
+  height: 110rpx;
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.iput {
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #EEEEEE;
+}
+
+.iput>input {
+  /* width: 486rpx; */
+  padding: 0 30rpx;
+  margin-left: 40rpx;
+  width: 486rpx;
+  height: 72rpx;
+  background: #F5F5F5;
+  border-radius: 36rpx;
+}
+
+.iput>view>image {
+  padding: 0 20rpx;
+}
+
+.iput>view>image:first-child {
+  width: 42rpx;
+  height: 41rpx;
+  object-fit: contain;
+}
+
+.iput>view>image:last-child {
+  width: 37rpx;
+  height: 37rpx;
+  object-fit: contain;
+}
+
+.test {
+  margin-left: 30rpx;
+  background: #F5F5F5;
+  border-radius: 2rpx;
+}
+
+.PopupNone {
+  display: none;
+}

@@ -1,0 +1,12 @@
+<!--pages/collection/collection.wxml-->
+<view class="view">
+    <view class="text" wx:for="{{textData}}" wx:for-index="i" wx:for-item="t" wx:key="i" bindtap="goDis" data-id="{{t.id}}">
+      <view class="healthEncyclopedia">
+        <view>{{t.title}}</view>
+        <view>{{t.creat_at}}</view>
+      </view>
+      <view class="image">
+        <image src="{{t.image}}"></image>
+      </view>
+    </view>
+</view>

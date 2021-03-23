@@ -1,0 +1,52 @@
+<!--pages/healthEncyclopediaDisck/healthEncyclopediaDisck.wxml-->
+<view class="view">
+	<view class="view_top">
+		<view class="title">{{article_detail.title}}</view>
+		<view class="tit_time">
+			<view>健康小知识</view>
+			<view>{{article_detail.creat_at}}</view>
+		</view>
+		<view class="article_detail_content">
+			<!-- <rich-text nodes="{{}}"></rich-text> -->
+			<image wx:if="{{article_detail.image}}" class="healthEncyclopediaDisck_image" src="{{article_detail.image}}" mode='widthFix'></image>
+			<rich-text nodes="{{article_detail.content}}"></rich-text>
+		</view>
+	</view>
+	<view class="comments_box">
+		<view class="comments_title">全部评论</view>
+		<view wx:for="{{one}}" wx:for-index="i" wx:for-item="t" wx:key="i">
+			<view class="comments" wx:if="{{!t.top_id}}">
+				<!-- 头像 -->
+				<view>
+					<image class="portrait" src="{{t.image}}"></image>
+				</view>
+				<!-- 内容 -->
+				<view class="commentsDis">
+					<view>{{t.niciname}}</view>
+					<view>{{t.content}}</view>
+					<view>{{t.creat_at}}</view>
+					<view class="test" wx:if="{{t.content1}}" style="padding:20rpx;">{{t.uname}}：{{t.content1}}</view>
+				</view>
+				<!-- 回复 -->
+				<view class="hui" wx:if="{{!t.content1}}" bindtap="Popup" data-id="{{t.id}}">回复</view>
+				<view class="hui" style="visibility:hidden;" wx:else>回复</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 回复弹框 -->
+<view>
+	<modal hidden="{{PopupBool}}" confirm-text="确定" cancel-text="取消" bindcancel="cancelM" bindconfirm="confirmM">
+		<input model:value="{{Popup}}" type='text' placeholder="请输入您的回复" />
+	</modal>
+</view>
+<view class="iput_box">
+	<view class="iput">
+		<input type="text" placeholder="写评论..." model:value="{{comments}}" focus="{{false}}" />
+		<view>
+			<image wx:if="{{!is_fav}}" src="/image/ios/tab_ic_dz.png" mode='widthFix' bindtap="collection"></image>
+			<image wx:else src="/image/ios/tab_ic_dz_pre.png" mode='widthFix' bindtap="collection"></image>
+			<image src="/image/ios/tab_ic_fx.png" mode='widthFix' bindtap="send"></image>
+		</view>
+	</view>
+</view>

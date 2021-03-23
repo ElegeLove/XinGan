@@ -1,0 +1,128 @@
+/* pages/measurementySuss/measurementySuss.wxss */
+/* 分数 */
+.bg_view {
+  width: 750rpx;
+  height: 558rpx;
+  color: #FFFFFF;
+  padding: 0 41rpx;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.top_img{
+  width: 750rpx;
+  height: 558rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg_view>view:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+}
+
+.bg_view>view:first-child>view:first-child {
+  width: 450rpx;
+  height: 80rpx;
+  font-size: 64rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+}
+
+.bg_view>view:first-child>view:last-child {
+  width: 250rpx;
+  height: 180rpx;
+  font-size: 129rpx;
+  font-family: DINOT-Medium;
+  font-weight: 500;
+}
+
+.xian {
+  width: 53rpx;
+  height: 6rpx;
+  background: #FFFFFF;
+}
+
+/* 内容 */
+.test_box {
+  width: 100%;
+  padding: 0 0 0 56rpx;
+  box-sizing: border-box;
+  /* position: absolute;
+  top: 350rpx;
+  right: 0; */
+  margin-top: -250rpx;
+  z-index: 222;
+
+}
+
+.test {
+  width: 100%;
+  min-height: 660rpx;
+  padding: 60rpx 86rpx 160rpx 50rpx;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.main_img{
+  width: 100%;
+  min-height: 660rpx;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.test>view {
+  width: 100%;
+  font-size: 28rpx;
+  font-family: 'PingFang SC';
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 50rpx;
+  white-space:normal;
+  word-break:break-all;
+  /* margin: 0 auto; */
+}
+
+.test>view:first-child {
+  /* width: 450rpx;
+  height: 60rpx; */
+  width: 100%;
+  text-align: center;
+
+  font-size: 38rpx;
+  font-family: 'PingFang SC';
+  font-weight: bold;
+  color: #333333;
+  /* margin: 50rpx auto; */
+}
+.test>view:last-child{
+  margin-bottom: 20rpx;
+}
+
+/* .view:last-child{
+  width: 531rpx;height: 219rpx;
+} */
+.button {
+  margin: 0 auto 40rpx;
+  /* margin-top: 450rpx; */
+}
+
+.button>button {
+  background: #F87628;
+  border-radius: 50rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 100rpx;
+}

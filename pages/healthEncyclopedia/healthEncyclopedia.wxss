@@ -1,0 +1,95 @@
+/* pages/healthEncyclopedia/healthEncyclopedia.wxss */
+/* 导航栏 */
+.nav {
+  height: 110rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 100rpx;
+  background: #ffffff;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #333333;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.nav-item {
+  width: 20%;
+  height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 34rpx;
+  font-family: 'PingFang SC';
+  font-weight: 540;
+  color: #333333;
+  margin: 0 20rpx;
+}
+
+.nav-item.active {
+  color: #F87628;
+  font-weight: 540;
+  border-bottom: 8rpx solid #F87628;
+}
+
+/* 新闻 */
+.view {
+  margin-top: 120rpx;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+
+.text {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.healthEncyclopedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.healthEncyclopedia>view:first-child {
+  font-size: 34rpx;
+  font-family: 'PingFang SC';
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 20rpx;
+}
+
+.healthEncyclopedia>view:last-child {
+  font-size: 30rpx;
+  font-family: 'PingFang SC';
+  font-weight: 400;
+  color: #999999;
+}
+
+.healthEncyclopedia>view {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  table-layout:fixed;
+  word-break: break-all;
+}
+
+.image>image {
+  width: 158rpx;
+  height: 158rpx;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  object-fit: contain;
+}

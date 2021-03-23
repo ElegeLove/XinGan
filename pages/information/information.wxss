@@ -1,0 +1,102 @@
+/* pages/information/information.wxss */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.nav view image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.nav view:first-child {
+  color: #F87628;
+}
+
+.nav view:last-child {
+  color: #999999;
+}
+
+.nav view:first-child,
+.nav view:last-child {
+  text-align: center;
+}
+
+.xian {
+  width: 300rpx;
+  height: 4rpx;
+  background: #E6E6E6;
+  margin: 0 20rpx;
+}
+
+.nav_font view:last-child {
+  color: #999999;
+}
+
+.fontSex {
+  color: #999999;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+}
+
+.sexBox {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+.sexVal {
+  width: 400rpx;
+  margin-left: 10rpx;
+  color: #999999;
+}
+
+.nav_font view {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #F87628;
+  line-height: 36rpx;
+}
+
+.input picker {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.input input,
+.input picker {
+  width: 600rpx;
+  height: 100rpx;
+  margin: 40rpx auto;
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding-left: 40rpx;
+}
+
+.step {
+  margin: 0 auto;
+}
+
+.bottom {
+  width: 25rpx;
+  height: 14rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 43rpx;
+}
+
+.step>button {
+  color: #FFFEFE;
+  background-color: #F87628;
+  border-radius: 50rpx;
+  margin-top: 180rpx;
+  padding: 0;
+  line-height: 100rpx;
+}

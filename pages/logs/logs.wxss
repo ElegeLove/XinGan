@@ -1,0 +1,64 @@
+.logo{
+  margin-top: 40rpx;
+  text-align: center;
+}
+.logo>image{
+  width: 248rpx;height: 290rpx;
+}
+.phone,.pass{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+.pass{
+  margin-top: 100rpx;
+}
+.xian{
+  display: inline-block;
+  width: 1rpx;height: 25rpx;
+  background-color: #000;
+}
+.phone>text,.pass>text{
+  font-size: 32rpx;
+  margin: 0 15rpx 0 0;
+}
+.phone>text:first-child,.pass>text:first-child{
+  width: 110rpx;
+}
+/* .phone>text:nth-child(1),.pass>text:nth-child(1){
+  margin-left: 30rpx;
+} */
+.phone>input,.pass>input{
+  font-size: 32rpx;
+  margin-left: 15rpx;
+  /* margin: 0 15rpx; */
+}
+.pass_getpass{
+  color: #F87628 !important;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding: 0;
+  background-color: #fff;
+}
+.login{
+  display: flex;
+  align-items: center;
+}
+.login>button{
+  border-radius: 50rpx;
+  margin-top: 200rpx;
+  padding: 0;
+  line-height: 100rpx;
+}
+.butFlase{
+  color: #9A9A9A;
+  background-color: #EEEEEE;
+}
+.butTrue{
+  color: #FFFEFE;
+  background-color: #F87628;
+}

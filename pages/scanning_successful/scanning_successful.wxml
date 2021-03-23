@@ -1,0 +1,12 @@
+<!--pages/scanning_successful/scanning_successful.wxml-->
+<!--pages/scanning/scanning.wxml-->
+<view class="scanning">
+  <view class="font">绑定设备成功</view>
+  <view class="image">
+    <image src="/image/ios/home_btn_bdcg.png"></image>
+  </view>
+  <view class="button">
+    <button bindtap="goindex">开始体验</button>
+  </view>
+</view>
+

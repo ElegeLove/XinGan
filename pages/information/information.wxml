@@ -1,0 +1,30 @@
+<!--pages/information/information.wxml-->
+<view>
+	<view class="nav">
+		<view>
+			<image src="/image/ios/home_ic_grxx@2x.png"></image>
+			<view>个人信息</view>
+		</view>
+		<view class="xian"></view>
+		<view>
+			<image src="/image/ios/home_ic_stzk@2x.png"></image>
+			<view>身体状况</view>
+		</view>
+	</view>
+	<view class="input">
+		<input type="text" model:value="{{name}}" placeholder-class="fontSex" placeholder="姓名" />
+		<!-- <input type="text" model:value="{{sex}}" placeholder="性别"/> -->
+		<picker bindchange="bindViewEvent" model:value='{{index}}' range="{{gender}}">
+			<view class="sexBox">
+				<text wx:if="{{!gender[index]}}" class="fontSex">性别  </text>
+				<view class="sexVal">{{sex==1?'男':sex==2?'女':''}}</view>
+				<image class="bottom" src="/image/ios/bottom.png"></image>
+			</view>
+		</picker>
+		<input type="text" model:value="{{born}}" placeholder-class="fontSex" placeholder="出生日期（如19980424）" />
+		<!-- <input type="text" placeholder="地址"/> -->
+	</view>
+	<view class="step">
+		<button bindtap="goTwo" style="width: 629rpx;height: 100rpx;">下一步</button>
+	</view>
+</view>

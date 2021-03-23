@@ -1,0 +1,10 @@
+<!--pages/scanning/scanning.wxml-->
+<view class="scanning">
+  <view class="font">请先扫码绑定设备</view>
+  <view class="image">
+    <image bindtap="sao" src="/image/ios/home_btn_sm.png"></image>
+  </view>
+  <view class="button">
+    <button>开始体验</button>
+  </view>
+</view>

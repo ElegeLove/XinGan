@@ -1,0 +1,22 @@
+<!--pages/measurementySuss/measurementySuss.wxml-->
+<view>
+  <view class="bg_view" style="">
+    <view>
+      <view>健康测评分数</view>
+      <view>{{data.score}}</view>
+    </view>
+    <image class="top_img" src="../../image/ios/home_bg_cpfs.png"></image>
+    <view class="xian"></view>
+  </view>
+  <view class="test_box">
+    <view class="test">
+      <view>恭喜您，完成答题！！！</view>
+      <view>{{data.txt1}}</view>
+      <image class="main_img" src="../../image/ios/home_bg_wbk.png"></image>
+      <view>{{data.txt2}}</view>
+    </view>
+  </view>
+  <view class="button">
+    <button style="width: 629rpx;height: 100rpx;" bindtap="again">重新测试</button>
+  </view>
+</view>

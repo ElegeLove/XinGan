@@ -1,0 +1,61 @@
+.date{
+  width: 670rpx;height: 72rpx;
+  background-color: #FEEBE0;
+  border-radius: 36rpx;
+  margin: 0 auto;
+  margin-top: 28rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 72rpx;
+}
+.date>view{
+  width: 173rpx;height: 72rpx;
+  text-align: center;
+}
+.date>view:last-child{
+  background: #F87628;
+  border-radius: 36rpx;
+  color: #FFFFFF;
+}
+/* 年月日 */
+.date1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 36rpx 0; */
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+}
+.date1>view>image{
+  width: 14rpx;height: 24rpx;
+  padding: 0 50rpx;
+}
+/* 心率图 */
+.sleep{ 
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  text-align: center;
+  margin: 80rpx 0 25rpx 0;
+}
+.sleepTime{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;  
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+.sleepTime>view:first-child,.sleepTime>view:nth-child(3){
+  font-size: 72rpx;
+  font-family: DINOT;
+}

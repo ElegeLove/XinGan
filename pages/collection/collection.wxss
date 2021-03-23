@@ -1,0 +1,47 @@
+/* pages/collection/collection.wxss */
+.view {
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+
+.text {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.healthEncyclopedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.healthEncyclopedia>view:first-child {
+  font-size: 34rpx;
+  font-family: 'PingFang SC';
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 40rpx;
+}
+
+.healthEncyclopedia>view:last-child {
+  width: 100%;
+  font-size: 30rpx;
+  font-family: 'PingFang SC';
+  font-weight: 400;
+  color: #999999;
+}
+
+.image>image {
+  width: 158rpx;
+  height: 158rpx;
+  border-radius: 10rpx;
+  object-fit: contain;
+}

@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="html">
+  <view class="advice">
+    <view>个性化健康建议：</view>
+    <view>增加运动量，提高心肺功能；保证充足睡眠，适当午休。</view>
+  </view>
+  <view class="test" wx:if="{{score==0}}">
+    <image class="test_img" src="../../image/ios/home_ic_bg_jkcp.png"></image>
+    <view>
+      <view>健康测评分析</view>
+      <view>算一算您的健康综合分数</view>
+    </view>
+    <view>
+      <button bindtap="measurement">去测试</button>
+    </view>
+  </view>
+  <view class="test" wx:else>
+    <image class="test_img" src="../../image/ios/home_ic_bg_jkcp.png"></image>
+    <view>
+      <view>
+        <text class="score">{{score}}</text>分
+      </view>
+      <view>您的健康综合分数</view>
+    </view>
+    <view>
+      <button bindtap="measurement">重新测评</button>
+    </view>
+  </view>
+  <view class="function">
+      <view class="heartRate" bindtap="heartRate">
+        <image class="main_img" src="../../image/ios/home_bg_xl.png"></image>
+        <view>
+          <view>心率&呼吸率</view>
+          <view>
+            <view>查看您的</view>
+            <view>历史记录</view>
+          </view>
+        </view>
+      </view>
+      <view class="sleep" bindtap="sleep">
+        <image class="main_img" src="../../image/ios/home_bg_sm.png"></image>
+        <view>
+          <view>睡眠</view>
+          <view>
+            <view>睡眠质量</view>
+            <view>科学分析</view>
+          </view>
+        </view>
+      </view>
+      <view class="hrv" bindtap="hrv">
+        <image class="main_img" src="../../image/ios/home_bg_hrvfx.png"></image>
+        <view>
+          <view>HRV分析</view>
+          <view>
+            <view>心率变异性：</view>
+            <view>反应心脏健康</view>
+          </view>
+        </view>
+      </view>
+      <view class="pressure" bindtap="pressure">
+        <image class="main_img" src="../../image/ios/home_bg_ylfx.png"></image>
+        <view>
+          <view>压力分析</view>
+          <view>
+            <view>查看您的</view>
+            <view>心理压力水平</view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

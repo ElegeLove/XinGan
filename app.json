@@ -1,0 +1,73 @@
+{
+  "pages":[
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/information/information",
+    "pages/information_physical/information_physical",
+    "pages/measurementySuss/measurementySuss",
+    "pages/scanning/scanning",
+    "pages/scanning_successful/scanning_successful",
+    "pages/detection/detection",
+    "pages/healthEncyclopedia/healthEncyclopedia",
+    "pages/my/my",
+    "pages/measurementy/measurement",
+    "pages/heartRate/heartRate",
+    "pages/breathing/breathing",
+    "pages/zhouheartRate/zhouheartRate",
+    "pages/zhoubreathing/zhoubreathing",
+    "pages/yueheartRate/yueheartRate",
+    "pages/yuebreathing/yuebreathing",
+    "pages/nianheartRate/nianheartRate",
+    "pages/nianbreathing/nianbreathing",
+    "pages/sleep/sleep",
+    "pages/zhousleep/zhousleep",
+    "pages/yuesleep/yuesleep",
+    "pages/niansleep/niansleep",
+    "pages/hrv/hrv",
+    "pages/pressure/pressure",
+    "pages/zhoupressure/zhoupressure",
+    "pages/yuepressure/yuepressure",
+    "pages/nianpressure/nianpressure",
+    "pages/AboutUs/AboutUs",
+    "pages/collection/collection",
+    "pages/feedback/feedback",
+    "pages/healthEncyclopediaDisck/healthEncyclopediaDisck"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "心感健康",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#C2C2C2", 
+    "selectedColor": "#F87628",
+    "borderStyle": "white" ,
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/image/tab/ios/tab_ic_sy_nor@2x.png",
+      "selectedIconPath": "/image/tab/ios/tab_ic_sy_pre@2x.png"
+    },
+    {
+      "pagePath": "pages/detection/detection",
+      "text": "检测",
+      "iconPath": "/image/tab/ios/tab_ic_jc_nor@2x.png",
+      "selectedIconPath": "/image/tab/ios/tab_ic_jc_pre@2x.png"
+    },
+    {
+      "pagePath": "pages/healthEncyclopedia/healthEncyclopedia",
+      "text": "健康百科",
+      "iconPath": "/image/tab/ios/tab_ic_jkbk_nor@2x.png",
+      "selectedIconPath": "/image/tab/ios/tab_ic_jkbk@2x.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/image/tab/ios/tab_ic_wd_nor@2x.png",
+      "selectedIconPath": "/image/tab/ios/tab_ic_wd_pre@2x.png"
+    }]
+  }
+}

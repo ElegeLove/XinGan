@@ -1,0 +1,22 @@
+<!--pages/information_physical/information_physical.wxml-->
+<view>
+  <view class="nav">
+    <view>
+      <image src="/image/ios/home_ic_grxx@2x.png"></image>
+      <view>个人信息</view>
+    </view>
+    <view class="xian"></view>
+    <view>
+      <image src="/image/ios/home_ic_grxx@2x.png"></image>
+      <view>身体状况</view>
+    </view>
+  </view>
+  <view class="input">
+    <input type="text" model:value="{{height}}" placeholder="身高(cm)"/>
+    <input type="text" model:value="{{weight}}" placeholder="体重(kg)"/>
+    <textarea placeholder="病史" model:value="{{his}}" name="" id="" cols="30" rows="10"></textarea>
+  </view>
+  <view class="step">
+    <button open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo" style="width: 629rpx;height: 100rpx;">确定</button>
+  </view>
+</view>

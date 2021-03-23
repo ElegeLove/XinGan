@@ -1,0 +1,22 @@
+<!--logs.wxml-->
+<view>
+  <view class="logo">
+    <image src="/image/ios/lgoo@2x.png"></image>
+  </view>
+  <view class="phone">
+    <text>手机号</text>
+    <text class="xian"></text>
+    <input type="text" model:value="{{phone}}" placeholder="请输入手机号" placeholder-class="placeholder-input" />
+  </view>
+  <view class="pass">
+    <text>验证码</text>
+    <text class="xian"></text>
+    <input type="text" model:value="{{code}}" placeholder="请输入验证码" placeholder-class="placeholder-input" />
+    <button bindtap="getCode" disabled="{{isCode}}" class="pass_getpass" style="width: 180rpx;height: 40rpx;margin-right: -5rpx;">
+      {{codeVal}}
+    </button>
+  </view>
+  <view class="login">
+    <button bindtap="login" class="{{phone&&code?'butTrue':'butFlase'}}" style="width: 629rpx;height: 100rpx;font-weight: 500;">登录</button>
+  </view>
+</view>

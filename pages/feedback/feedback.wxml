@@ -1,0 +1,19 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="html">
+  <view class="body">
+    <view class="style"></view>
+    <view class="phone">
+      <text>联系方式</text>
+      <input type="text" model:value="{{phone}}" placeholder="手机/邮箱/QQ（选填）" placeholder-class="placeholder-input" />
+    </view>
+    <view class="style" style="margin-bottom: 42rpx;"></view>
+   <view style="width: 90%;margin: 0 auto;">
+    <view>
+      <text class="title">问题描述</text>
+      <textarea class="check" placeholder-class="placeholder" placeholder="请输入反馈信息" model:value="{{value}}" name="" id="" cols="30" rows="10" maxlength="300"></textarea>
+    </view>
+    <view class="num">已输入{{value.length}}/300</view>
+   </view>
+  </view>
+  <button class="button" style="width:100%;" bindtap="behind">提交</button>
+</view>

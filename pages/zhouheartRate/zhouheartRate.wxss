@@ -1,0 +1,107 @@
+/* 年月周日 */
+.date{
+  width: 670rpx;height: 72rpx;
+  background-color: #FEEBE0;
+  border-radius: 36rpx;
+  margin: 0 auto;
+  margin-top: 28rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 72rpx;
+}
+.date>view{
+  width: 173rpx;height: 72rpx;
+  text-align: center;
+}
+.date>view:nth-child(2){
+  background: #F87628;
+  border-radius: 36rpx;
+  color: #FFFFFF;
+}
+/* 年月日 */
+.date1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 36rpx 0; */
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+}
+.date1>view>image{
+  width: 14rpx;height: 24rpx;
+  padding: 0 50rpx;
+}
+/* 心率图 */
+.heartRate{
+  text-align: center;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 75rpx;
+}
+.heartRate>text:first-child{
+  font-size: 72rpx;
+  font-family: DINOT;
+}
+.heartRate>text:last-child{
+  font-size: 26rpx;
+  font-family: PingFang SC;
+}
+.container {
+  width: 100%;height: 450rpx;
+}
+ec-canvas {
+  width: 100%;
+  /* height: 50%; */
+  background: #eee;
+}
+.test{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 75rpx;
+}
+.test>view{
+  width: 324rpx;height: 180rpx;
+  background: #F87628;
+  border-radius: 20rpx;
+}
+.test>view:last-child{
+  background: #FFFFFF;
+  border: 1px solid #D2D2D2;
+}
+.test1>view:first-child,.test2>view:first-child{
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FED1B6;
+}
+.test2>view:first-child{
+  color: #666666;
+}
+.test1>view:last-child>text:first-child,.test2>view:last-child>text:first-child{
+  font-size: 48rpx;
+  font-family: DINOT;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.test2>view:last-child>text:first-child{
+  color: #333333;
+}
+.test1>view:last-child>text:last-child,.test2>view:last-child>text:last-child{ 
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.test2>view:last-child>text:last-child{
+  color: #333333;
+}
+.test1>view,.test2>view{
+  margin: 30rpx 0 30rpx 20rpx;
+}

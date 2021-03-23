@@ -1,0 +1,49 @@
+<!-- 时间 -->
+<view>
+  <view class="date">
+    <view bindtap="pressure">日</view>
+    <view>周</view>
+    <view bindtap="yuepressure">月</view>
+    <view bindtap="nianpressure">年</view>
+  </view>
+  <view class="date1">
+    <view>
+      <image bindtap="before" src="/image/ios/home_ic_left.png"></image>
+    </view>
+    <view>{{time.zhouTime}}</view>
+    <view>
+      <image bindtap="after" src="/image/ios/home_ic_right.png"></image>
+    </view>
+  </view>
+  <view>
+    <view class="sleepTime">
+      <view>{{per}}</view>
+      <view wx:if="{{per<=99&&per>=80}}">偏高</view>
+      <view wx:if="{{per<=79&&per>=60}}">中等</view>
+      <view wx:if="{{per<=59&&per>=30}}">正常</view>
+      <view wx:if="{{per<=29&&per>=1}}">放松</view>
+    </view>
+  </view>
+  <view class="container marg">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ee }}"></ec-canvas>
+  </view>
+  <view class="heartRateSum">
+      <view>
+        <view>{{low}}</view>
+        <view class="heartRateText">最低压力</view>
+      </view>
+      <view class="xian"></view>
+      <view>
+        <view>{{max}}</view>
+        <view class="heartRateText">最高压力</view>
+      </view>
+      <view class="xian"></view>
+      <view>
+        <view>{{per}}</view>
+        <view class="heartRateText">平均压力值</view>
+      </view>
+    </view>
+  <view class="container">
+    <ec-canvas id="mychart-dom" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

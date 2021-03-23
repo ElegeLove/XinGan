@@ -1,0 +1,79 @@
+<!-- 时间 -->
+<view>
+  <view class="date">
+    <view>日</view>
+    <view bindtap="zhoubreathing">周</view>
+    <view bindtap="yuebreathing">月</view>
+    <view bindtap="nianbreathing">年</view>
+  </view>
+  <view class="date1">
+    <view>
+      <image bindtap="before" src="/image/ios/home_ic_left.png"></image>
+    </view>
+    <view>{{time}}</view>
+    <view>
+      <image bindtap="after" src="/image/ios/home_ic_right.png"></image>
+    </view>
+  </view>
+  <!-- 心率图 -->
+  <view>
+    <view class="heartRate">
+      <text>{{dataVal}}</text>
+      <text>次/分钟</text>
+    </view>
+    <view class="container">
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      <!-- <view class="time">
+        <view class="time1">
+          <view>00:00</view>
+          <view>06:00</view>
+          <view>12:00</view>
+          <view>18:00</view>
+          <view>00:00</view>
+        </view>
+      </view> -->
+    </view>
+    <view class="heartRateSum">
+      <view>
+        <view>
+          <text>{{maxVal}}</text>
+          <text class="textFont">次/分钟</text>
+        </view>
+        <view class="heartRateText">最高呼吸率</view>
+      </view>
+      <view class="xian"></view>
+      <view>
+        <view>
+          <text>{{minVal}}</text>
+          <text class="textFont">次/分钟</text>
+        </view>
+        <view class="heartRateText">最低呼吸率</view>
+      </view>
+      <view class="xian"></view>
+      <view>
+        <view>
+          <text>{{sum_pre}}</text>
+          <text class="textFont">次/分钟</text>
+        </view>
+        <view class="heartRateText">平均呼吸率</view>
+      </view>
+    </view>
+    <view class="test">
+      <view class="test1" bindtap="heartRate">
+        <view>心率</view>
+        <view>
+          <text>{{respiratory}}</text>
+          <text>次/分钟</text>
+        </view>
+      </view>
+      <view class="test2">
+        <view>呼吸率</view>
+        <view>
+          <text>{{sum_pre}}</text>
+          <text>次/分钟</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
